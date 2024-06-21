@@ -1,14 +1,16 @@
-# To-Do App
 
-A simple and interactive To-Do application built with React, allowing users to add, edit, delete, and mark tasks as done.
+---
+
+# Simple Todo App with React
+
+A simple Todo application built with React and Vite, allowing users to manage tasks effectively.
 
 ## Features
 
 - Add new tasks
 - Edit existing tasks
-- Delete tasks
 - Mark tasks as done
-- Separate views for To-Do and Done tasks
+- Delete tasks
 
 ## Requirements
 
@@ -24,7 +26,7 @@ git clone https://github.com/your-username/todo-app.git
 cd todo-app
 ```
 
-2. Install the dependencies:
+2. Install dependencies:
 
 ```bash
 npm install
@@ -40,38 +42,29 @@ npm install react-icons --save
 yarn add react-icons
 ```
 
-## Running the Application
+## Usage
 
 1. Start the development server:
 
 ```bash
-npm start
+npm run dev
 # or
-yarn start
+yarn dev
 ```
 
-2. Open your browser and navigate to `http://localhost:3000` to see the application in action.
+2. Open your browser and navigate to `http://localhost:3000` to see the application.
 
 ## Project Structure
 
-- `src`: Contains the source code of the application.
-  - `components`: Contains the React components.
-  - `styles`: Contains the CSS files.
-- `public`: Contains the public assets and the HTML template.
-- `package.json`: Contains the project metadata and dependencies.
+- `src/`: Contains the source code of the application.
+  - `components/`: React components.
+  - `styles/`: CSS files.
+- `public/`: Public assets and HTML template.
+- `package.json`: Project metadata and dependencies.
 
-## Available Scripts
+## Additional Scripts
 
-In the project directory, you can run:
+- `npm run build` or `yarn build`: Build the app for production.
+- `npm run serve` or `yarn serve`: Serve the production build locally.
 
-- `npm start` or `yarn start`: Runs the app in development mode.
-- `npm test` or `yarn test`: Launches the test runner.
-- `npm run build` or `yarn build`: Builds the app for production.
-
-## Contributing
-
-Contributions are welcome! Please create an issue or submit a pull request for any enhancements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License.
+---
