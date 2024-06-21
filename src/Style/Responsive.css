@@ -1,0 +1,123 @@
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 15px;
+    }
+
+    .data input[type="text"] {
+        margin-right: 5px;
+    }
+
+    .data .btn button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .task h3 {
+        font-size: 14px;
+    }
+
+    .operations {
+        gap: 8px;
+    }
+
+    #edit, #delete, #done {
+        font-size: 22px;
+    }
+
+    .pages button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .edit-task input[type="text"] {
+        margin-right: 5px;
+    }
+
+    .edit-task button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .data {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .data input[type="text"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .data .btn {
+        justify-content: center;
+    }
+
+    .tasks {
+        flex-direction: column;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+.task {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.task .operations #delete:hover {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Edit task animation */
+.edit-task {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #2C2C2C;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

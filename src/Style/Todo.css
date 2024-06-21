@@ -1,0 +1,201 @@
+.main-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #E0E0E0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.header h1 {
+    background: linear-gradient(45deg, #00C9FF, #92FE9D, #00BFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.data input[type="text"] {
+    font-size: larger;
+    font-weight: 500;
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #00C9FF, #92FE9D, #00BFFF) 1;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+.btn {
+    margin-right: 5px;
+    display: flex;
+}
+
+.data .btn button {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #00C9FF, #92FE9D, #00BFFF);
+    color: #121212;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.data button:hover {
+    background: linear-gradient(45deg, #92FE9D, #00BFFF, #00C9FF);
+}
+
+.Tasks {
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #2C2C2C;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.task h3 {
+    margin: 0;
+    color: #E0E0E0;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 85%;
+    white-space: pre-wrap; /* Allows for line breaks */
+}
+
+.operations {
+    display: flex;
+    gap: 10px;
+}
+
+#edit {
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 25px;
+}
+
+#edit:hover {
+    color: #a1a1a1;
+}
+
+#delete {
+    color: #d20e0e;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 27px;
+}
+
+#delete:hover {
+    color: #f50606;
+}
+
+#done {
+    color: #09e06a;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 27px;
+}
+
+#done:hover {
+    color: #109a4e;
+}
+
+.pages {
+    padding: 20px;
+    height: 90px;
+    gap: 10px;
+    display: flex;
+}
+
+.pages button {
+    border: none;
+    outline: none;
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.active {
+    background: linear-gradient(45deg, #00C9FF, #92FE9D, #00BFFF);
+}
+
+.active:hover {
+    background: linear-gradient(45deg, #92FE9D, #00BFFF, #00C9FF);
+}
+
+.edit-task {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.edit-task input[type="text"] {
+    font-size: larger;
+    font-weight: 500;
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #00C9FF, #92FE9D, #00BFFF) 1;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #E0E0E0;
+    width: 70%;
+}
+
+.edit-task button {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #00C9FF, #92FE9D, #00BFFF);
+    color: #121212;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-task button:hover {
+    background: linear-gradient(45deg, #92FE9D, #00BFFF, #00C9FF);
+}
+
+.completed-time {
+    font-size: 11px;
+    color: #ccc;
+    margin-top: 5px;
+}
